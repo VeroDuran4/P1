@@ -1,0 +1,265 @@
+/* Barra de Navegación */
+
+.navbar {
+    padding: 2rem;
+    background-color: #7d677e;
+}
+
+
+.navbar a {
+    color: #fafdea !important;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Estilos Generales */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5 rem;
+    font-family: 'Abril Fatface', cursive;
+}
+
+
+.seccion-oscura {
+    background-color: #322030;
+    color: #fafdea;
+}
+
+.seccion-clara {
+    background-color: #fafdea;
+    color: #360b41;
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    text-align: center;
+}
+
+.btn-info {
+    font-size: 1.1rem;
+    margin: 20px;
+}
+
+.seccion-descripcion {
+    font-size: 1.2rem;
+
+}
+
+
+.seccion-texto {
+    font-size: 1.2 rem;
+    text-align: center;
+}
+
+
+/*  Seccion Hero  */
+
+.hero {
+    background-color: #fafdea;
+    min-width: 450px;
+    text-align: center;
+}
+
+.hero-principal {
+    padding: 3rem;
+}
+
+.hero-imagen-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color:#360b41;
+}
+
+
+.hero-inferior_imagen {
+    width: 380px;
+    height: 380px;
+    margin-top: -15px;
+}
+
+
+/*   Sobre Mi   */
+
+.sobre-mi {
+    height: 500px;
+    padding: 110px;
+    border: 5px;
+}
+
+
+.sobre mi .contenedor {
+    max-width: 600px;
+}
+
+
+/*  Experiencia  */
+
+.experiencia {
+    padding: 40px 40px 60px 40px;
+
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    background-color: #322030;
+    color: #c1a2a0;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.experiencia .columna {
+    min-height: 250px;
+    background-color: #c1a2a0;
+    border: 2px solid #322030;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: background-color, color 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+    background-color: #322030;
+    color: #fafdea;
+}
+
+.badges-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge {
+    margin: 3px;
+}
+
+
+/* Seccion Proyectos  */
+
+.seccion-proyectos {
+    padding: 40px;
+    background-color: #fafdea;
+    color: #360b41;
+
+}
+
+.seccion-proyectos img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display:block;
+    transition: all 0.2s ease;
+}
+
+.proyectos-galeria-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #360b41;
+}
+
+.proyecto {
+    position: relative;
+}
+
+.proyecto:hover img {
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+    display: flex;
+}
+
+.overlay i {
+    color: black;
+    font-size: 55px;
+    margin: 15px;
+}
+
+
+/*Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px){
+    .overlay p{
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .overlay i {
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width:401px) and (max-width: 767px){
+    .overlay p{
+        font-size: 21px;
+        margin-bottom: 5px;
+    }
+    .overlay i {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .hero-inferior_imagen {
+        max-width: 600px;
+    }
+
+    .sobre-mi {
+        padding:15px;
+    }
+}
