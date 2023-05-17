@@ -1,5 +1,9 @@
 /* Barra de Navegación */
 
+body {
+    min-width: 300px;
+}
+
 .navbar {
     padding: 2rem;
     background-color: #7d677e;
@@ -71,7 +75,7 @@ h1 {
 
 .hero {
     background-color: #fafdea;
-    min-width: 450px;
+    min-width: 200px;
     text-align: center;
 }
 
@@ -361,6 +365,13 @@ footer {
 }
 
 /*Adaptable (Responsivo) */
+
+@media screen and (max-width: 767px) {
+    body {
+        width: 100% !important;
+    }
+}
+
 
 @media screen and (max-width: 767px) {
     .footer-logo {
