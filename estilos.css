@@ -366,12 +366,6 @@ footer {
 
 /*Adaptable (Responsivo) */
 
-@media screen and (max-width: 767px) {
-    body {
-        width: 100% !important;
-    }
-}
-
 
 @media screen and (max-width: 767px) {
     .footer-logo {
