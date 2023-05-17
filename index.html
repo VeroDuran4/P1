@@ -18,7 +18,7 @@
 
     <!-- Barra de Navegación-->
 
-    <nav class="navbar navbar-expand-md">
+    <nav id="inicio" class="navbar navbar-expand-md">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,13 +29,13 @@
           </a>
           <ul class="navbar-nav d-flex justify-content-center align-items-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Sobre mí</a>
+              <a class="nav-link active" aria-current="page" href="#conoceme">Sobre mí</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Proyectos</a>
+              <a class="nav-link" href="#proyectos">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
           
@@ -59,7 +59,7 @@
 
       <!--    Sobre mí   -->
 
-      <section class="sobre-mi seccion-oscura">
+      <section id="conoceme" class="sobre-mi seccion-oscura">
         <div class="contenedor">
           <h2 class="seccion-titulo">Conoce a Veronica Duran</h2>
           <p class="seccion-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ad nulla expedita provident, a distinctio perspiciatis quae inventore laudantium ipsa, quibusdam error, dignissimos minima labore numquam quidem deserunt nostrum minus.
@@ -67,6 +67,12 @@
           </p>
         </div>
       </section>
+
+      <!-- Boton Volver Arriba -->
+
+      <a class="volver-arriba-link" href="#inicio">
+        <i class="bi bi-arrow-up-circle-fill volver-arriba-button"></i>
+      </a>
 
       <!---  Experiencia   -->
 
@@ -114,7 +120,7 @@
 
       <!-- Proyectos -->
 
-      <section class="seccion-proyectos d-flex flex-column">
+      <section id="proyectos" class="seccion-proyectos d-flex flex-column">
         <h2 class="seccion-titulo">Mis Proyectos</h2>
         <h3 class="seccion-descripcion">Estos son algunos de mis proyectos recientes</h3>
       <!--Galeria de Proyectos-->
@@ -225,12 +231,59 @@
           </div>
         </div>
         <a href="#" target="_blank" rel="noopener noreferrer">
-          <button type="button" class="btn btn-info">
+          <button type="button" class="btn btn-info mas-proyectos-button">
             Ver más proyectos
             <i class="bi bi-arrow-right-circle-fill"></i>
           </button>
         </a>
+        <br id="contacto">
       </section>
+
+      <!--  Contacto  -->
+
+      <section class="contacto seccion-oscura">
+        <div class="container">
+          <div class="container rectangulo text-center d-flex justify-content-evenly">
+            <div class="row">
+              <div class="col-12 col-md-4 seccion-titulo">
+                Hablemos
+              </div>
+              <div class="col-12 col-md-4 descripcion">
+                Contactame para iniciar tu proyecto de desarrollo web y voy a hacer que tu visión se vuelva realidad.
+              </div>
+              <div class="col-12 col-md-4">
+                <a href="mailto:vero.dur7@gmail.com">
+                  <button type="button">
+                    Contacto
+                    <i class="bi bi-envelope-check-fill"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  Pie de pagina (footer)  -->
+
+      <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo" src="Imagenes/Logo Vero.png" alt="Logo del Portfolio">
+        <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+          <a href="https://github.com/VeroDuran4" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/veronica-duran-arg/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="mailto:vero.dur7@gmail.com" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </div>
+        <div class="derechos-de-autor">
+          Creado por Veronica Duran (2023) &#169;
+        </div>
+      </footer>
 
     
 

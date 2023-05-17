@@ -102,7 +102,7 @@ h1 {
 /*   Sobre Mi   */
 
 .sobre-mi {
-    height: 500px;
+    min-height: 500px;
     padding: 110px;
     border: 5px;
 }
@@ -185,6 +185,10 @@ h1 {
     margin-bottom: 40px;
 }
 
+.mas-proyectos-button {
+    margin-bottom: 40px;
+}
+
 .overlay {
     transition: all 0.2s ease;
     opacity: 0;
@@ -224,8 +228,147 @@ h1 {
     margin: 15px;
 }
 
+/*Contacto*/
+
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 10px;
+}
+
+.contacto .rectangulo {
+    margin-top: -5rem;
+    background-color: #725b75;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contacto button {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+    background-color: white;
+    color: #322030;
+}
+
+.contacto button:hover i{
+    color: #322030;
+}
+
+.contacto button i {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+
+/*  Pie de pagina (footer)  */
+
+footer {
+    min-height: 250px;
+}
+
+.footer-logo {
+    height: 60px;
+    width: 60px;
+    margin: -10px 10px 10px 10px;
+}
+
+.footer-texto {
+    font-size: 1.2rem;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+
+.iconos-redes-sociales a:hover {
+    background-color: white;
+    border: 2px solid #725b75;
+}
+
+
+.iconos-redes-sociales a:hover i {
+    color: #322030;
+}
+
+
+.derechos-de-autor {
+    font-size: 15px;
+    color: #c1a2a0;
+    padding: 20px;
+}
+
+
+/* Boton de Volver Arriba */
+
+
+.volver-arriba-link {
+    text-decoration: none;
+    position: sticky;
+    left: 95%;
+    top: 95%;
+    height: 65px;
+    width: 65px;
+    z-index: 100;
+}
+
+.volver-arriba-button {
+    height: 60px;
+    width: 60px;
+    font-size: 60px;
+    color: #5ebaf2;
+    opacity: .5;
+    position: sticky;
+    z-index: 100;
+}
 
 /*Adaptable (Responsivo) */
+
+@media screen and (max-width: 767px) {
+    .footer-logo {
+        height: 60px;
+        width: 60px;
+        margin: 10px 10px 10px 10px;
+    }
+}
 
 @media screen and (max-width: 400px){
     .overlay p{
